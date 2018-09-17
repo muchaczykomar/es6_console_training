@@ -6,24 +6,52 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="style.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
 	<title>CODING CHALLENGE ES6/2015</title>
 </head>
 
 <body>
-	<div id="main-container" class="margin-all">
+	<div class="main-header">
+		<span class="main-header__text">Coding Challange v2.0</span>
+		<span class="main-header__icon">
+			<i class="fas fa-code fa-2x"></i>
+		</span>
+	</div>
+	<div class="main-container padding-all margin-top">
 
 		<p>Treści zadań:</p>
-		<ul>
-			<li>1. Create class Elements with a name and a build year parameters</li>
-			<li>2. Create Map with 3 parks and 4 streets (instances of elements)</li>
-			<li>3. Create Method which calculates tree density (num of trees / park area)</li>
-			<li>4. Create Method calculating average age of parks (sum of all ages / number of parks)</li>
-			<li>5. Display the name of park having more than 1000 trees</li>
-			<li>6. Display Total and average length of the town's streets</li>
-			<li>7. Create, set and display classification of all streets (tiny/small/normal/big/huge)</li>
-		</ul>
-		<p>Odpowiedzi wyswietlane sa w konsoli (wcisnij f12)</p>
+		<ol class="main-container__list" id="list">
+			<li id="1">Generate park</li>
+			<li id="2">Generate street</li>
+			<li id="3">Calculate trees density (num of trees / park area)</li>
+			<li id="4">Calculating average age of parks (sum of all ages / number of parks)</li>
+			<li id="5">Display the name of park having more than 1000 trees</li>
+			<li id="6">Display Total and average length of the town's streets</li>
+			<li id="7">Display classification of all streets (tiny/small/normal/big/huge)</li>
+		</ol>
+	</div>
+	<div class="main-results margin-top" id="resuts-area">
+		<div class="main-results__form padding-all">
+			<div class="row">
+				<label class="middle-vertically" for="name">Name: </label>
+				<input id="name" type="text">
+			</div>
+			<div class="row">
+				<label class="middle-vertically" for="name">Park area: </label>
+				<input id="size" type="text">
+			</div>
+			<div class="row">
+				<label class="middle-vertically" for="name">Number of trees: </label>
+				<input id="density" type="text">
+			</div>
+			<div class="row submit-wrapper">
+				<button class="submit-btn" type="submit">Generate</button>
+			</div>
+		</div>
+		<div class="main-results__calculations middle-vertically">
+			<div class="middle-horizontally" id="final-result"></div>
+		</div>
 	</div>
 	<script src="engine.js"></script>
 </body>
