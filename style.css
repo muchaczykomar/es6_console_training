@@ -1,0 +1,62 @@
+html {
+  height: 100vh;
+  background-color: antiquewhite;
+  color: brown;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+}
+.main-container {
+}
+
+/* MY OWN FRAMEWORK */
+.margin-all {
+  margin: 50px;
+}
+.margin-top {
+  margin-top: 50px;
+}
+.margin-bottom {
+  margin-bottom: 50px;
+}
+.margin-horizontal {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.margin-vertical {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.margin-left {
+  margin-left: 50px;
+}
+.margin-right {
+  margin-right: 50px;
+}
+.padding-all {
+  padding: 50px;
+}
+.padding-top {
+  padding-top: 50px;
+}
+.padding-bottom {
+  padding-bottom: 50px;
+}
+.padding-horizontal {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.padding-vertical {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.padding-left {
+  padding-left: 50px;
+}
+.padding-right {
+  padding-right: 50px;
+}
+/* **************** */
